@@ -1,0 +1,18 @@
+{
+  "disclaimer": "Exploratory domain rules, developed after seeing parts of R1. NOT held-out superiority.",
+  "n_cases": 36,
+  "predicted_claims": 17,
+  "prediction_file_sha256": "eab3f8a759755541b0f20406cf80cf919f47337f695ee81a70ca07b85da09b36",
+  "private_outcomes_read": false,
+  "r1_labels_read": false,
+  "rule_version": "evidence-frontier-structured-linker-exp-1",
+  "run_status": "COMPLETE_SOURCE_VERIFIED",
+  "schema": "naacl-autolinker-predict-census-v1",
+  "source_sha256": "718ebc29c86c691ca6b4e253ca109c4beb150887101ebeeb649d92075109b2a4",
+  "verdict_counts": {
+    "CONTRADICTED_UNDER_TOOL_CONTRACT": 1,
+    "NOT_A_COMPLETION_CLAIM": 19,
+    "SUPPORTED_UNDER_TOOL_CONTRACT": 11,
+    "UNKNOWN": 5
+  }
+}

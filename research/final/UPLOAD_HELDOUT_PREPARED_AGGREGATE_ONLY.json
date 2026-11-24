@@ -1,0 +1,23 @@
+{
+  "case_counts_by_domain_turn": {
+    "('airline', 'intermediate')": 20,
+    "('retail', 'intermediate')": 20
+  },
+  "development_source_trajectories_excluded": 40,
+  "frozen_code_sha256": {
+    "field_linker.py": "4cd840431a4bc583a6efc4bfea6d876973128749a944b67ee2ed4da5e23aa818",
+    "turn_intake_pinned.py": "0195cb4adf00e3b8b79005e49e6ff28357c5acd316150509dad2616a90389e36"
+  },
+  "model_accuracy_measured": false,
+  "n": 40,
+  "n_remaining_source_trajectories_with_candidates": 123,
+  "overlap_with_previous_source_trajectories": 0,
+  "predictions_sha256": "b2872057adb2e9a098c04cdf353c30485b6f10db308268a6f4eebbc0bca09120",
+  "prepared": true,
+  "review_labels_loaded": false,
+  "schema": "naacl-heldout-prepared-aggregate-v1",
+  "selection_seed": "naacl2027-prospective-trajectory-disjoint-v1",
+  "source_revision": "382e57d1784b55c5155f4ef394ef48f1c747a287",
+  "source_sha256": "718ebc29c86c691ca6b4e253ca109c4beb150887101ebeeb649d92075109b2a4",
+  "warning": "Pre-specified rules; SAME DATASET, different source trajectories. No heldout accuracy until blind human labels. Nonrepresentative stratified sample."
+}

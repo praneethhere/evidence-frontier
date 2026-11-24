@@ -1,0 +1,23 @@
+{
+  "annotated_rows": 40,
+  "benchmark_outcomes_used": false,
+  "claim_presence_counts": {
+    "blank": 0,
+    "no": 21,
+    "uncertain": 0,
+    "yes": 19
+  },
+  "evidence_label_counts_among_yes": {
+    "contradicted": 1,
+    "out_of_scope": 0,
+    "supported_under_tool_contract": 18,
+    "unknown": 0
+  },
+  "gold_labels_created": false,
+  "interannotator_agreement_measured": false,
+  "note": "A single reviewer pass is neither independent consensus nor a benchmark result; no raw text is exported.",
+  "reviewer": "R1",
+  "schema": "naacl2027-one-reviewer-progress-v1",
+  "selected": 40,
+  "semantic_accuracy_measured": false
+}

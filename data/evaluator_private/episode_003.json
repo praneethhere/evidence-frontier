@@ -1,0 +1,67 @@
+{
+  "episode_key": "episode_003",
+  "final_grade": {
+    "EOS": true,
+    "TS": true,
+    "clean_success": true,
+    "collateral": [],
+    "dup_compensated": 0,
+    "dup_executed": 0,
+    "dup_live": 0,
+    "exact_state": true,
+    "extraneous_writes": 0,
+    "goal_met": true,
+    "n_effects": 2,
+    "targets": [
+      {
+        "dup_executed": 0,
+        "dup_live": 0,
+        "executed": 1,
+        "expected": 1,
+        "kind": "refund",
+        "label": "refund",
+        "live": 1,
+        "met": true
+      },
+      {
+        "dup_executed": 0,
+        "dup_live": 0,
+        "executed": 1,
+        "expected": 1,
+        "kind": "mail",
+        "label": "mail",
+        "live": 1,
+        "met": true
+      }
+    ]
+  },
+  "late_effect_events": [
+    {
+      "args": {
+        "body": "The duplicate charge was refunded.",
+        "subject": "Refund for invoice INV-69538",
+        "to": [
+          "ravi.haddad@customer.example"
+        ]
+      },
+      "effects": [
+        2
+      ],
+      "fault": "timeout_late",
+      "index": 3,
+      "note": "",
+      "observation": {
+        "note": "in-flight request committed",
+        "ok": true
+      },
+      "source": "late_commit",
+      "t_end": 90.9,
+      "t_start": 90.9,
+      "tool": "mail_send"
+    }
+  ],
+  "mode": "timeout_late",
+  "simulator_overclaim": false,
+  "source_episode_id": "a17c71fa38e50f8f",
+  "source_note": "PRIVATE EVALUATOR-ONLY; NEVER USE THIS TO GENERATE CLAIM-TIME VERDICTS."
+}

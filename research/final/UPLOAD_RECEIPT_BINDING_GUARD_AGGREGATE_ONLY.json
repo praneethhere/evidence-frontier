@@ -1,0 +1,57 @@
+{
+  "frozen_rule_sha256": {
+    "field_linker.py": "4cd840431a4bc583a6efc4bfea6d876973128749a944b67ee2ed4da5e23aa818",
+    "turn_intake_pinned.py": "0195cb4adf00e3b8b79005e49e6ff28357c5acd316150509dad2616a90389e36"
+  },
+  "guard_sha256": "85e8531f92990ea24412f7523a62b5a5d58310e458102926d9a8cfe86a285cc1",
+  "limitations": [
+    "No claim detection improvement, no new human labels, no baseline superiority, no proof of persistent state.",
+    "Guard detects request/receipt ID consistency only for mapped tools; matching IDs are not sufficient for claim correctness.",
+    "Original corpus transitions measure output stability, not accuracy.",
+    "No statistical independence assumed between receipt/action pairs."
+  ],
+  "n_original_utterances": 893,
+  "n_pairs": 42,
+  "n_trajectories": 28,
+  "original_annotations_read": false,
+  "original_audit_reproduced": true,
+  "original_corpus_finding_verdict_changes": 0,
+  "original_corpus_verdict_transitions": {
+    "CONTRADICTED_UNDER_TOOL_CONTRACT -> CONTRADICTED_UNDER_TOOL_CONTRACT": 2,
+    "NOT_A_COMPLETION_CLAIM -> NOT_A_COMPLETION_CLAIM": 721,
+    "SUPPORTED_UNDER_TOOL_CONTRACT -> SUPPORTED_UNDER_TOOL_CONTRACT": 89,
+    "UNKNOWN -> UNKNOWN": 81
+  },
+  "original_rules_modified": false,
+  "paired_results": {
+    "format_only": {
+      "guarded_case_SUPPORTED_UNDER_TOOL_CONTRACT": 42,
+      "guarded_finding_SUPPORTED_UNDER_TOOL_CONTRACT": 42,
+      "original_case_SUPPORTED_UNDER_TOOL_CONTRACT": 42,
+      "original_finding_SUPPORTED_UNDER_TOOL_CONTRACT": 42
+    },
+    "malformed_target": {
+      "guarded_case_UNKNOWN": 42,
+      "guarded_finding_UNKNOWN": 42,
+      "original_case_SUPPORTED_UNDER_TOOL_CONTRACT": 42,
+      "original_finding_SUPPORTED_UNDER_TOOL_CONTRACT": 42
+    },
+    "missing_target": {
+      "guarded_case_UNKNOWN": 42,
+      "guarded_finding_UNKNOWN": 42,
+      "original_case_SUPPORTED_UNDER_TOOL_CONTRACT": 42,
+      "original_finding_SUPPORTED_UNDER_TOOL_CONTRACT": 42
+    },
+    "wrong_target": {
+      "guarded_case_UNKNOWN": 42,
+      "guarded_finding_UNKNOWN": 42,
+      "original_case_SUPPORTED_UNDER_TOOL_CONTRACT": 42,
+      "original_finding_SUPPORTED_UNDER_TOOL_CONTRACT": 42
+    }
+  },
+  "prior_report_sha256": "9c4d4fb284773a0fff61abb2c33e62870c87fab5ff95d297844a8d1476d57807",
+  "private_outcomes_used": false,
+  "schema": "naacl-receipt-binding-guard-posthoc-v1",
+  "scope": "Post-hoc repair evaluated on the same selected receipt/action pairs; not independent validation. Missing and malformed target controls are additional synthetic variants.",
+  "source_sha256": "718ebc29c86c691ca6b4e253ca109c4beb150887101ebeeb649d92075109b2a4"
+}

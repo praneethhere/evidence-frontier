@@ -1,0 +1,52 @@
+{
+  "audit_script_sha256": "b86b961b172bbe78131fae7eebc5c277b0498cece8ed7ce17e695b4d8e542c70",
+  "census": {
+    "candidate_utterances": 893,
+    "excluded_no_eligible_object_receipt": 14,
+    "excluded_no_single_explicit_matching_text_id": 65,
+    "excluded_not_single_cited_receipt": 1,
+    "original_CONTRADICTED_UNDER_TOOL_CONTRACT": 2,
+    "original_NOT_A_COMPLETION_CLAIM": 721,
+    "original_SUPPORTED_UNDER_TOOL_CONTRACT": 89,
+    "original_UNKNOWN": 81,
+    "supported_findings_examined": 122
+  },
+  "frozen_rule_sha256": {
+    "field_linker.py": "4cd840431a4bc583a6efc4bfea6d876973128749a944b67ee2ed4da5e23aa818",
+    "turn_intake_pinned.py": "0195cb4adf00e3b8b79005e49e6ff28357c5acd316150509dad2616a90389e36"
+  },
+  "human_labels_read": false,
+  "limitations": [
+    "Synthetic wrong-target receipts are malformed/inconsistent observations, not naturally occurring model errors.",
+    "Selection is conditional on existing supported verdicts, one cited receipt, explicit matching identifier and distinct receipt/action.",
+    "An unchanged Supported verdict demonstrates failure to reject that inconsistent witness, not a proven false world-state claim.",
+    "No baseline comparison or new NLP accuracy measurement; no human usefulness claim."
+  ],
+  "n_distinct_eligible_trajectories": 28,
+  "n_eligible_pairs": 42,
+  "natural_receipt_census": {
+    "both_identifiers_present": 161,
+    "error_or_non_object": 23,
+    "listed_write_receipts": 184,
+    "natural_request_response_id_agreement": 161
+  },
+  "original_files_modified": false,
+  "paired_results_by_id_field": {
+    "order_id": {
+      "eligible_pairs": 41,
+      "format_control_passed": 41,
+      "wrong_target_case_SUPPORTED_UNDER_TOOL_CONTRACT": 41,
+      "wrong_target_finding_SUPPORTED_UNDER_TOOL_CONTRACT": 41
+    },
+    "reservation_id": {
+      "eligible_pairs": 1,
+      "format_control_passed": 1,
+      "wrong_target_case_SUPPORTED_UNDER_TOOL_CONTRACT": 1,
+      "wrong_target_finding_SUPPORTED_UNDER_TOOL_CONTRACT": 1
+    }
+  },
+  "private_outcomes_used": false,
+  "schema": "naacl-receipt-binding-posthoc-v1",
+  "scope": "Post-hoc entire pinned corpus, includes previous development and holdout trajectories; no new labels or new model runs.",
+  "source_sha256": "718ebc29c86c691ca6b4e253ca109c4beb150887101ebeeb649d92075109b2a4"
+}

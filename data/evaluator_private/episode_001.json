@@ -1,0 +1,43 @@
+{
+  "episode_key": "episode_001",
+  "final_grade": {
+    "EOS": true,
+    "TS": true,
+    "clean_success": true,
+    "collateral": [],
+    "dup_compensated": 0,
+    "dup_executed": 0,
+    "dup_live": 0,
+    "exact_state": true,
+    "extraneous_writes": 0,
+    "goal_met": true,
+    "n_effects": 2,
+    "targets": [
+      {
+        "dup_executed": 0,
+        "dup_live": 0,
+        "executed": 1,
+        "expected": 1,
+        "kind": "refund",
+        "label": "refund",
+        "live": 1,
+        "met": true
+      },
+      {
+        "dup_executed": 0,
+        "dup_live": 0,
+        "executed": 1,
+        "expected": 1,
+        "kind": "mail",
+        "label": "mail",
+        "live": 1,
+        "met": true
+      }
+    ]
+  },
+  "late_effect_events": [],
+  "mode": "none",
+  "simulator_overclaim": false,
+  "source_episode_id": "f1aace3fbfd3c36c",
+  "source_note": "PRIVATE EVALUATOR-ONLY; NEVER USE THIS TO GENERATE CLAIM-TIME VERDICTS."
+}

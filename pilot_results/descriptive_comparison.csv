@@ -1,0 +1,4 @@
+episode,visible_verdict,scripted_finish_only_baseline,error_means_failed_baseline,retrospective_limbo_TS_evaluator_only,private_mode_evaluator_only
+episode_001,SUPPORTED_UNDER_SIMULATOR_ACK,SUPPORTED,SUPPORTED,True,none
+episode_002,UNKNOWN,SUPPORTED,VIOLATED,False,timeout_pre
+episode_003,UNKNOWN,SUPPORTED,VIOLATED,True,timeout_late

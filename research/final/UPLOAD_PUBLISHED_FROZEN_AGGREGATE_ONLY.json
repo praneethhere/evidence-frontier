@@ -1,0 +1,18 @@
+{
+  "adapter_sha256": "74330204a70c81260f3ef1a399ca75f262e5271bb1f40bf0bbd74186401b8391",
+  "cases": 40,
+  "configurations": [
+    "rules_shipped",
+    "rules_domain_adapted",
+    "cascade-offline_shipped",
+    "cascade-offline_domain_adapted"
+  ],
+  "n_adapter_unprocessable": 0,
+  "prediction_time_before_human_labels": true,
+  "published_prediction_sha256": "de5d462f956bb92e95ac697a9ec99bb6656356b652c74d91642fc5f132edd8cf",
+  "published_version": "0.1.2",
+  "r1_labels_loaded": false,
+  "rule_pack_sha256": "3d52c626d2c93fc883f4a4326e245cdffb460e91496dcd38ad936d7153efd877",
+  "schema": "naacl-heldout-published-frozen-aggregate-v1",
+  "scope": "Published v0.1.2 and the old domain pack frozen on trajectory-disjoint same-dataset holdout"
+}

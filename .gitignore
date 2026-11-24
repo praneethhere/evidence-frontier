@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+LOCAL_PRIVATE*/
+REVIEW_LOCAL_PRIVATE/
+*DO_NOT_UPLOAD*/
+annotations_R*.csv
+heldout_annotations*.csv
+*.jsonl
+source_manifest.json
+.env
+
+# Optional external data and results must remain outside the repository
+*.zip
+*.tar.gz
+*.pem
+*.key
+.env.*
+*predictions*PRIVATE*
+frozen_predictions.json
+cases.json
+BLIND_REVIEW_LOCAL.html

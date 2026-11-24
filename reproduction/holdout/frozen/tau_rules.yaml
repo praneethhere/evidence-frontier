@@ -1,0 +1,51 @@
+# Exploratory domain adaptation. Designed after R1 review; NOT held-out tuning.
+# Receipt-only cannot become 'verified' without separate state probe under claimcheck v0.1.2.
+pack: tau_writes
+version: 1
+tools:
+  - book_reservation
+  - modify_user_address
+  - return_delivered_order_items
+  - exchange_delivered_order_items
+  - cancel_reservation
+  - cancel_pending_order
+  - update_reservation_flights
+  - update_reservation_baggages
+  - modify_pending_order_items
+claim_patterns:
+  booked:
+    - '\b(?:booked|booking is confirmed|reservation is confirmed)\b'
+  address_updated:
+    - '\baddress\s+(?:has\s+been\s+)?(?:successfully\s+)?(?:updated|reverted|changed)\b'
+  return_requested:
+    - '\breturn\s+requests?\s+(?:have|has)\s+been\s+(?:successfully\s+)?(?:processed|initiated)\b'
+  exchanged:
+    - '\bexchange\s+(?:requests?\s+)?(?:has\s+been\s+)?(?:successfully\s+)?(?:processed|initiated|completed)\b'
+  cancelled:
+    - '\b(?:cancelled|canceled)\b'
+  reservation_updated:
+    - '\breservation\s+(?:has\s+been\s+)?(?:successfully\s+)?updated\b'
+  order_modified:
+    - '\b(?:item|order)\s+(?:has\s+been\s+)?(?:successfully\s+)?modified\b'
+claims:
+  booked:
+    action: book_reservation
+    receipt: { reservation_id: { exists: true } }
+  address_updated:
+    action: modify_user_address
+    receipt: { address: { exists: true } }
+  return_requested:
+    action: return_delivered_order_items
+    receipt: { status: { equals: 'return requested', as: string } }
+  exchanged:
+    action: exchange_delivered_order_items
+    receipt: { status: { equals: 'exchange requested', as: string } }
+  cancelled:
+    action: '*cancel*'
+    receipt: { status: { equals: cancelled, as: string } }
+  reservation_updated:
+    action: update_reservation_flights
+    receipt: { flights: { exists: true } }
+  order_modified:
+    action: modify_pending_order_items
+    receipt: { status: { exists: true } }

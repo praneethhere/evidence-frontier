@@ -1,0 +1,182 @@
+{
+  "cases_excluded_as_guided": [
+    "blind_001",
+    "blind_002",
+    "blind_003",
+    "blind_004"
+  ],
+  "census_sha256": "940846997aef6f426cea72139231de22700fbda81201080a026e11f8806d79bc",
+  "comparison": {
+    "cascade-offline_domain_adapted": {
+      "claim_detection": {
+        "FN": 6,
+        "FP": 0,
+        "TN": 20,
+        "TP": 10,
+        "f1": 0.769231,
+        "precision": 1.0,
+        "recall": 0.625
+      },
+      "evidence_decision_coverage_over_all_R1_yes": 0.4375,
+      "evidence_verdicts_for_R1_yes": {
+        "abstain": 3,
+        "claim_missed": 6,
+        "contradicted_caught": 1,
+        "decided": 7,
+        "supported_marked_false_success": 6
+      },
+      "limitations": [
+        "R1 evidence labels are not adjudicated gold",
+        "No R2 agreement",
+        "No Unknown among R1 positive claims in this sample",
+        "Published tool deliberately treats receipt-only as unverifiable",
+        "Different contracts mean verdict disagreements are not necessarily model errors",
+        "Held-out claim extraction not assured; source cue influenced case selection",
+        "No intervention execution in this package"
+      ],
+      "n_R1_completion_claims": 16,
+      "n_R1_nonclaims": 20,
+      "n_cases": 36,
+      "scope": "36 unguided R1 cases only; targeted nonrepresentative selection; single reviewer"
+    },
+    "cascade-offline_shipped": {
+      "claim_detection": {
+        "FN": 16,
+        "FP": 0,
+        "TN": 20,
+        "TP": 0,
+        "f1": null,
+        "precision": null,
+        "recall": 0.0
+      },
+      "evidence_decision_coverage_over_all_R1_yes": 0.0,
+      "evidence_verdicts_for_R1_yes": {
+        "claim_missed": 16
+      },
+      "limitations": [
+        "R1 evidence labels are not adjudicated gold",
+        "No R2 agreement",
+        "No Unknown among R1 positive claims in this sample",
+        "Published tool deliberately treats receipt-only as unverifiable",
+        "Different contracts mean verdict disagreements are not necessarily model errors",
+        "Held-out claim extraction not assured; source cue influenced case selection",
+        "No intervention execution in this package"
+      ],
+      "n_R1_completion_claims": 16,
+      "n_R1_nonclaims": 20,
+      "n_cases": 36,
+      "scope": "36 unguided R1 cases only; targeted nonrepresentative selection; single reviewer"
+    },
+    "rules_domain_adapted": {
+      "claim_detection": {
+        "FN": 6,
+        "FP": 0,
+        "TN": 20,
+        "TP": 10,
+        "f1": 0.769231,
+        "precision": 1.0,
+        "recall": 0.625
+      },
+      "evidence_decision_coverage_over_all_R1_yes": 0.0625,
+      "evidence_verdicts_for_R1_yes": {
+        "abstain": 9,
+        "claim_missed": 6,
+        "decided": 1,
+        "supported_marked_false_success": 1
+      },
+      "limitations": [
+        "R1 evidence labels are not adjudicated gold",
+        "No R2 agreement",
+        "No Unknown among R1 positive claims in this sample",
+        "Published tool deliberately treats receipt-only as unverifiable",
+        "Different contracts mean verdict disagreements are not necessarily model errors",
+        "Held-out claim extraction not assured; source cue influenced case selection",
+        "No intervention execution in this package"
+      ],
+      "n_R1_completion_claims": 16,
+      "n_R1_nonclaims": 20,
+      "n_cases": 36,
+      "scope": "36 unguided R1 cases only; targeted nonrepresentative selection; single reviewer"
+    },
+    "rules_shipped": {
+      "claim_detection": {
+        "FN": 16,
+        "FP": 0,
+        "TN": 20,
+        "TP": 0,
+        "f1": null,
+        "precision": null,
+        "recall": 0.0
+      },
+      "evidence_decision_coverage_over_all_R1_yes": 0.0,
+      "evidence_verdicts_for_R1_yes": {
+        "claim_missed": 16
+      },
+      "limitations": [
+        "R1 evidence labels are not adjudicated gold",
+        "No R2 agreement",
+        "No Unknown among R1 positive claims in this sample",
+        "Published tool deliberately treats receipt-only as unverifiable",
+        "Different contracts mean verdict disagreements are not necessarily model errors",
+        "Held-out claim extraction not assured; source cue influenced case selection",
+        "No intervention execution in this package"
+      ],
+      "n_R1_completion_claims": 16,
+      "n_R1_nonclaims": 20,
+      "n_cases": 36,
+      "scope": "36 unguided R1 cases only; targeted nonrepresentative selection; single reviewer"
+    }
+  },
+  "must_not_claim": [
+    "This is not an independent gold benchmark",
+    "Abstention is not failure",
+    "Not a superiority result for Evidence Frontier",
+    "No executable probes were run"
+  ],
+  "no_future_oracle_or_r1_labels_passed_to_baseline": true,
+  "published_system": "agent-claimcheck",
+  "published_version": "0.1.2",
+  "reference": "https://github.com/B0yko/agent-claimcheck/tree/v0.1.2",
+  "run_counts": {
+    "cascade-offline_domain_adapted": {
+      "by_verdict": {
+        "false_success": 7,
+        "skipped": 26,
+        "unverifiable": 3,
+        "verified": 0
+      },
+      "results": 36
+    },
+    "cascade-offline_shipped": {
+      "by_verdict": {
+        "false_success": 0,
+        "skipped": 36,
+        "unverifiable": 0,
+        "verified": 0
+      },
+      "results": 36
+    },
+    "rules_domain_adapted": {
+      "by_verdict": {
+        "false_success": 1,
+        "skipped": 26,
+        "unverifiable": 9,
+        "verified": 0
+      },
+      "results": 36
+    },
+    "rules_shipped": {
+      "by_verdict": {
+        "false_success": 0,
+        "skipped": 36,
+        "unverifiable": 0,
+        "verified": 0
+      },
+      "results": 36
+    }
+  },
+  "schema": "naacl2027-published-baseline-local-pilot-v1",
+  "source": "AgentSuite/tau-bench-trajectories, public model trace prefixes, private locally reviewed subset",
+  "source_cases_sha256_private_only_in_local_report": true,
+  "temporal_semantics": "Every ts is a fixed placeholder; event order is from i, not wall clock"
+}

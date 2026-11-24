@@ -1,0 +1,17 @@
+{
+  "schema": "naacl-heldout-pretask-freeze-v1",
+  "rule_version": "evidence-frontier-structured-linker-exp-1",
+  "source_pin": "382e57d1784b55c5155f4ef394ef48f1c747a287",
+  "source_sha256": "718ebc29c86c691ca6b4e253ca109c4beb150887101ebeeb649d92075109b2a4",
+  "old_selection_seed": "naacl2027-utterance-sample-v1",
+  "new_selection_seed": "naacl2027-prospective-trajectory-disjoint-v1",
+  "n_source_records_considered": 165,
+  "n_previous_source_trajectories_excluded": 40,
+  "n_new_holdout_source_trajectories": 40,
+  "prior_art": [
+    "Progress Drift (AACL 2026)",
+    "AgentEval (2026 preprint)",
+    "agent-claimcheck v0.1.2"
+  ],
+  "interpretation": "Prospective within-source cohort, NOT out-of-domain or blind source access"
+}

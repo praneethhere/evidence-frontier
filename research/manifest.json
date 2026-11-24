@@ -1,0 +1,18 @@
+{
+  "schema": "evidence-frontier-study-pinned-v04",
+  "files": [
+    {
+      "path": "research/executed_probe_16.json",
+      "sha256": "ad42a2db88ac304b735c95cb7a4a8c473a84999290b3a8fff7aeff77ac172c08"
+    },
+    {
+      "path": "research/published_baselines_36.json",
+      "sha256": "ef814b2fa974e42f2cb0763fbb78b5563cf631f5b2cd84d1b96a34ab766a86f0"
+    },
+    {
+      "path": "research/reviewer_R1_40.json",
+      "sha256": "cf98f5b5028ab9c559cc95c0b2da6b5f3a07f22112f446474d4b52996b54619e"
+    }
+  ],
+  "origin": "Original user-uploaded aggregate-only reports; unchanged bytes."
+}

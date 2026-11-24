@@ -1,0 +1,274 @@
+{
+  "baseline_comparison_performed": false,
+  "claim_contract": "Positive evidence for mail send, NOT exactly-one or real-world delivery",
+  "mail_visibility_sla_seconds": 120.0,
+  "must_not_claim": [
+    "AgentEval novelty",
+    "real-LLM evidence-resolution accuracy",
+    "human-evaluation superiority",
+    "that empty eventually consistent read proves absence",
+    "that any positive read proves exactly one email"
+  ],
+  "no_rewrite_no_real_side_effects": true,
+  "results": [
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 1.8,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "OBSERVED_POSITIVE",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "no_probe",
+      "read_probe_count": 0,
+      "refund_count": 1,
+      "search_counts": [],
+      "source_mode_evaluator_only": "none"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 2.2,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "OBSERVED_POSITIVE",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "search_now",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        0
+      ],
+      "source_mode_evaluator_only": "none"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 122.2,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "OBSERVED_POSITIVE",
+      "positive_readback": true,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "wait_120",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        1
+      ],
+      "source_mode_evaluator_only": "none"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 242.2,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "OBSERVED_POSITIVE",
+      "positive_readback": true,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "wait_240",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        1
+      ],
+      "source_mode_evaluator_only": "none"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 30.9,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": false,
+      "probe_strategy": "no_probe",
+      "read_probe_count": 0,
+      "refund_count": 1,
+      "search_counts": [],
+      "source_mode_evaluator_only": "timeout_pre"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 31.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": false,
+      "probe_strategy": "search_now",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        0
+      ],
+      "source_mode_evaluator_only": "timeout_pre"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 151.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": false,
+      "probe_strategy": "wait_120",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        0
+      ],
+      "source_mode_evaluator_only": "timeout_pre"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 271.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": false,
+      "probe_strategy": "wait_240",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        0
+      ],
+      "source_mode_evaluator_only": "timeout_pre"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 30.9,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "no_probe",
+      "read_probe_count": 0,
+      "refund_count": 1,
+      "search_counts": [],
+      "source_mode_evaluator_only": "timeout_post"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 31.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "search_now",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        0
+      ],
+      "source_mode_evaluator_only": "timeout_post"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 151.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "OBSERVED_POSITIVE",
+      "positive_readback": true,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "wait_120",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        1
+      ],
+      "source_mode_evaluator_only": "timeout_post"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 271.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "OBSERVED_POSITIVE",
+      "positive_readback": true,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "wait_240",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        1
+      ],
+      "source_mode_evaluator_only": "timeout_post"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 30.9,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "no_probe",
+      "read_probe_count": 0,
+      "refund_count": 1,
+      "search_counts": [],
+      "source_mode_evaluator_only": "timeout_late"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 31.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "search_now",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        0
+      ],
+      "source_mode_evaluator_only": "timeout_late"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 151.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "UNKNOWN",
+      "positive_readback": false,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "wait_120",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        0
+      ],
+      "source_mode_evaluator_only": "timeout_late"
+    },
+    {
+      "claimed_complete": true,
+      "finish_virtual_seconds": 271.3,
+      "full_task_certified": false,
+      "mail_send_count": 1,
+      "mail_status": "OBSERVED_POSITIVE",
+      "positive_readback": true,
+      "private_final_task_success_evaluator_only": true,
+      "probe_strategy": "wait_240",
+      "read_probe_count": 1,
+      "refund_count": 1,
+      "search_counts": [
+        1
+      ],
+      "source_mode_evaluator_only": "timeout_late"
+    }
+  ],
+  "reviewer_data_used": false,
+  "schema": "naacl-limbo-executed-read-probe-pilot-v1",
+  "scope": "16 deterministic scripted LIMBO runs, controlled simulator, no LLM, exploratory",
+  "source_files_sha256": {
+    "limbo/agent.py": "c145bc4c32050fa0446f061aa6c300a8e178c186dcc8cc180ba028b7dc47d672",
+    "limbo/runtime.py": "241a21b60fd41deced45354d2c5565df399bc25e48c292acce1e1fafb25846ad",
+    "limbo/services.py": "68483bbfbfed20b422627850ee6f73edd947c6487810e838da5fab59b4dcb906",
+    "limbo/tasks.py": "02efac4e4dbc1079d8534a1ea85bbc1bb5c7b676db60a40ffca08ca3b14f03eb",
+    "limbo/world.py": "d2d9a346d07769ad5157eac67d2f204bea73c1a5cdacf093fe647a001b47e00d"
+  },
+  "source_pin": "2db09fba22a0572a70639162a808906409f612a8"
+}

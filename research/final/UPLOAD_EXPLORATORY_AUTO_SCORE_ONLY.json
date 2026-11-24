@@ -1,0 +1,45 @@
+{
+  "MUST_NOT_CLAIM": [
+    "No adjudicated gold",
+    "R1 was partly visible during rule design",
+    "Tool receipt is not independent real-world state verification",
+    "Not a held-out performance or superiority result",
+    "No R2 agreement",
+    "No natural Unknown claims in R1 pilot"
+  ],
+  "claim_detection": {
+    "FN": 0,
+    "FP": 1,
+    "TN": 19,
+    "TP": 16,
+    "f1": 0.9696969696969697,
+    "precision": 0.9411764705882353,
+    "recall": 1.0
+  },
+  "evidence_cross_tab_R1_vs_auto": [
+    {
+      "R1_label": "contradicted",
+      "auto_verdict": "CONTRADICTED_UNDER_TOOL_CONTRACT",
+      "n": 1
+    },
+    {
+      "R1_label": "supported_under_tool_contract",
+      "auto_verdict": "SUPPORTED_UNDER_TOOL_CONTRACT",
+      "n": 11
+    },
+    {
+      "R1_label": "supported_under_tool_contract",
+      "auto_verdict": "UNKNOWN",
+      "n": 4
+    }
+  ],
+  "frozen_predictions_sha256": "eab3f8a759755541b0f20406cf80cf919f47337f695ee81a70ca07b85da09b36",
+  "n_guided_excluded": 4,
+  "n_unguided": 36,
+  "r1_completion_claims": 16,
+  "r1_csv_sha256": "39ab3c4982b64edf4768a49186f5ab1b326b0051fe98114c2bce9afe8abc587e",
+  "rule_version": "evidence-frontier-structured-linker-exp-1",
+  "schema": "naacl-evidence-frontier-auto-pilot-score-v1",
+  "scope": "Single-reviewer, nonrepresentative, exploratory in-domain development sample",
+  "source_sha256": "718ebc29c86c691ca6b4e253ca109c4beb150887101ebeeb649d92075109b2a4"
+}

@@ -1,0 +1,17 @@
+{
+  "files_sha256": {
+    "EXPERIMENT_CARD.md": "8b1cb72cc07a1acd3b84dbc53a6374613c20a5e2e6624f20b090a66ea26a383d",
+    "PAPER_RESULT_LANGUAGE.md": "32fba6ee48955a50103b9442613204490ea4f7f69763a2390bfc46f8f4eea112",
+    "PRE_REGISTERED_PROTOCOL.json": "98ce9d2df692dc3754d3155cbe6a43b8cb08e4ca246b36f2db3a123de42c288c",
+    "README.md": "5281a900f7f09342780135a86048de351fdf07cef251c593e5d60fd6d508121f",
+    "baseline_frozen.py": "4b6b188f10e9daef601dc026d1d6d1c597141e06ca279f28c6419911b729440e",
+    "frozen/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "frozen/adapter.py": "74330204a70c81260f3ef1a399ca75f262e5271bb1f40bf0bbd74186401b8391",
+    "frozen/field_linker.py": "4cd840431a4bc583a6efc4bfea6d876973128749a944b67ee2ed4da5e23aa818",
+    "frozen/tau_rules.yaml": "3d52c626d2c93fc883f4a4326e245cdffb460e91496dcd38ad936d7153efd877",
+    "frozen/turn_intake_pinned.py": "0195cb4adf00e3b8b79005e49e6ff28357c5acd316150509dad2616a90389e36",
+    "holdout.py": "f635e2f7283eca979ddc9902bfc4626e8f2c15a92949f2f2aa32ebfb77ef70f0",
+    "tests/test_holdout.py": "c921f7b51e459e2630b96c7bd4e2e3cb6878865850f4cba89cdb95bbd88ade5a"
+  },
+  "schema": "naacl-heldout-kit-manifest-v1"
+}

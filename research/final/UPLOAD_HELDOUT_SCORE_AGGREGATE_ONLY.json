@@ -1,0 +1,38 @@
+{
+  "R1_csv_sha256": "ae08d049f11a146bdf8a18b29a0c5f4918497376de47c400c2f1c3b004ef170a",
+  "R2_present": false,
+  "benchmark_truth_used": false,
+  "confusion_vs_single_R1": {
+    "FN": 8,
+    "FP": 2,
+    "TN": 28,
+    "TP": 2
+  },
+  "evidence_crosstab": {
+    "('contradicted', 'CONTRADICTED_UNDER_TOOL_CONTRACT')": 1,
+    "('contradicted', 'UNKNOWN')": 1,
+    "('supported_under_tool_contract', 'CLAIM_MISSED')": 8
+  },
+  "f1": 0.28571428571428575,
+  "frozen_prediction_sha256": "b2872057adb2e9a098c04cdf353c30485b6f10db308268a6f4eebbc0bca09120",
+  "frozen_rule_sha256": {
+    "field_linker.py": "4cd840431a4bc583a6efc4bfea6d876973128749a944b67ee2ed4da5e23aa818",
+    "turn_intake_pinned.py": "0195cb4adf00e3b8b79005e49e6ff28357c5acd316150509dad2616a90389e36"
+  },
+  "human_R1_negative": 30,
+  "human_R1_positive": 10,
+  "limitations": [
+    "Single dataset, same model and domains; trajectory-disjoint, not independent-domain evaluation",
+    "Case selection is stratified and nonrepresentative",
+    "R1 alone is not adjudicated gold",
+    "Development of v0.6 rules involved previous R1 examples",
+    "Receipt support is not independent real-world state verification"
+  ],
+  "n_total": 40,
+  "n_undecidable_human_claim_presence": 0,
+  "n_unprocessable_predictions": 0,
+  "precision": 0.5,
+  "recall": 0.2,
+  "schema": "naacl-heldout-r1-aggregate-v1",
+  "source_trajectory_overlap_with_development": 0
+}

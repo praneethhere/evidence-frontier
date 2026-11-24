@@ -1,0 +1,41 @@
+{
+  "schema": "evidence-frontier-manifest-v03",
+  "origin": "user-uploaded naacl_complete_trace_results.zip",
+  "files": [
+    {
+      "path": "data/agent_visible/episode_001.json",
+      "sha256": "fd0309566b3bd77c35a68a8cb4821e124dabcaeda79beb4d99c1d0cc0686248d",
+      "scope": "AGENT_VISIBLE_OR_PROVENANCE"
+    },
+    {
+      "path": "data/agent_visible/episode_002.json",
+      "sha256": "f5bca18457ae49cd4806f3ecf778c40ba585ba21cdd7cfffe0d2341a1b256929",
+      "scope": "AGENT_VISIBLE_OR_PROVENANCE"
+    },
+    {
+      "path": "data/agent_visible/episode_003.json",
+      "sha256": "e1cb65b0036cad378b430e7a11e84e37eea52932b11f1cc9aec4cd3a47252eb4",
+      "scope": "AGENT_VISIBLE_OR_PROVENANCE"
+    },
+    {
+      "path": "data/capture_report.json",
+      "sha256": "9b7ae41ea10678d61bdf3ac7f8394dae2ec1fd2f05338cd30080954af296b4b1",
+      "scope": "AGENT_VISIBLE_OR_PROVENANCE"
+    },
+    {
+      "path": "data/evaluator_private/episode_001.json",
+      "sha256": "ab119f2205e6ac704e5b9337a26c335cc455989c2c89e238a78d69f7efe65f33",
+      "scope": "PRIVATE_FOR_REVEAL_ONLY"
+    },
+    {
+      "path": "data/evaluator_private/episode_002.json",
+      "sha256": "637d18358fa0ae6d86bad6f9f44f2b3cacda69aebfb354a32db454abfcd8e932",
+      "scope": "PRIVATE_FOR_REVEAL_ONLY"
+    },
+    {
+      "path": "data/evaluator_private/episode_003.json",
+      "sha256": "bfc7d50f10b41bd5c567c48af298660980ede97dd4441e14ac71bfa4a567ada8",
+      "scope": "PRIVATE_FOR_REVEAL_ONLY"
+    }
+  ]
+}

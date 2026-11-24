@@ -1,0 +1,43 @@
+{
+  "interpretation": "Complete source conversation captured; private oracle separate; ACK-only deterministic baseline; NOT an NLP benchmark.",
+  "review_required": [
+    "inspect agent-facing tool replies and contracts",
+    "build independent human annotated corpus of real language-agent outputs",
+    "compare against agent-claimcheck and evidence-aware systems"
+  ],
+  "rows": [
+    {
+      "episode_key": "episode_001",
+      "final_TS_evaluator_only": true,
+      "source_mode_evaluator_only": "none",
+      "visible_decision": "SUPPORTED_UNDER_SIMULATOR_ACK",
+      "visible_trace_sha256": "ba30f586357684d81205e2c030032af4f4d98c1548abdb564e3694f20cacd630"
+    },
+    {
+      "episode_key": "episode_002",
+      "final_TS_evaluator_only": false,
+      "source_mode_evaluator_only": "timeout_pre",
+      "visible_decision": "UNKNOWN",
+      "visible_trace_sha256": "5ed67b6809fcc5444d88c81207f69d1f099664f7689a4e3be686fcde23c7b263"
+    },
+    {
+      "episode_key": "episode_003",
+      "final_TS_evaluator_only": true,
+      "source_mode_evaluator_only": "timeout_late",
+      "visible_decision": "UNKNOWN",
+      "visible_trace_sha256": "9e48efd64b58fcf6df885ca72b2e1fdb7fae716cbc45c5363d6abfc1b34f3ab9"
+    }
+  ],
+  "schema": "naacl-evidencefrontier-capture-report-v03",
+  "scope": "3 deterministic scripted LIMBO episodes, no live LLM",
+  "source": {
+    "files_sha256": {
+      "limbo/agent.py": "c145bc4c32050fa0446f061aa6c300a8e178c186dcc8cc180ba028b7dc47d672",
+      "limbo/grader.py": "77ea82d94e8a3339538b23824f4ed2babd35edd186d5129de87bc5bff4f90b99",
+      "limbo/policies.py": "63075898473ef729020cbe3b176325958ed7eb3212e8b4927fb0461ef00e72f8",
+      "limbo/runtime.py": "241a21b60fd41deced45354d2c5565df399bc25e48c292acce1e1fafb25846ad",
+      "limbo/tasks.py": "02efac4e4dbc1079d8534a1ea85bbc1bb5c7b676db60a40ffca08ca3b14f03eb"
+    },
+    "head": "2db09fba22a0572a70639162a808906409f612a8"
+  }
+}

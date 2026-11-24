@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "error_is_failure_definitive_without_certificate": 2,
+    "eventual_success_but_unknown_at_claim_time": 1,
+    "finish_only_supported_despite_unknown": 2,
+    "n_scripted_episodes": 3,
+    "supported_by_complete_visible_ack": 1,
+    "unknown_at_claim_time": 2
+  },
+  "interpretation": "Descriptive sanity check only. Not extraction accuracy, error rate, benchmark result, evidence intervention, LLM experiment or novelty finding.",
+  "matched_visible_pair": {
+    "different_eventual_truth_evaluator_only": true,
+    "episodes": [
+      "episode_002",
+      "episode_003"
+    ],
+    "identical": true
+  },
+  "provenance": "Three deterministic scripted LIMBO episodes; claim text identical and scripted; no independent human labels or LLM results",
+  "rows": [
+    {
+      "episode": "episode_001",
+      "error_means_failed_baseline": "SUPPORTED",
+      "private_mode_evaluator_only": "none",
+      "retrospective_limbo_TS_evaluator_only": true,
+      "scripted_finish_only_baseline": "SUPPORTED",
+      "visible_verdict": "SUPPORTED_UNDER_SIMULATOR_ACK"
+    },
+    {
+      "episode": "episode_002",
+      "error_means_failed_baseline": "VIOLATED",
+      "private_mode_evaluator_only": "timeout_pre",
+      "retrospective_limbo_TS_evaluator_only": false,
+      "scripted_finish_only_baseline": "SUPPORTED",
+      "visible_verdict": "UNKNOWN"
+    },
+    {
+      "episode": "episode_003",
+      "error_means_failed_baseline": "VIOLATED",
+      "private_mode_evaluator_only": "timeout_late",
+      "retrospective_limbo_TS_evaluator_only": true,
+      "scripted_finish_only_baseline": "SUPPORTED",
+      "visible_verdict": "UNKNOWN"
+    }
+  ],
+  "schema": "evidence-frontier-v03-descriptive-pilot"
+}

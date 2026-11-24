@@ -1,0 +1,72 @@
+{
+  "frozen_prediction_sha256": "de5d462f956bb92e95ac697a9ec99bb6656356b652c74d91642fc5f132edd8cf",
+  "limitations": [
+    "Single-reviewer labels are not gold",
+    "Adapted rules were authored after older development cases",
+    "Receipt-only and state-probe verification contracts differ",
+    "Stratified same-dataset holdout; no general domain shift"
+  ],
+  "n": 40,
+  "published_version": "0.1.2",
+  "r1_sha256": "ae08d049f11a146bdf8a18b29a0c5f4918497376de47c400c2f1c3b004ef170a",
+  "results": {
+    "cascade-offline_domain_adapted": {
+      "claim_detection_vs_single_R1": {
+        "FN": 8,
+        "TN": 30,
+        "TP": 2
+      },
+      "f1": 0.33333333333333337,
+      "n_unprocessable": 0,
+      "precision": 1.0,
+      "published_verdict_counts": {
+        "false_success": 1,
+        "skipped": 38,
+        "verified": 1
+      },
+      "recall": 0.2
+    },
+    "cascade-offline_shipped": {
+      "claim_detection_vs_single_R1": {
+        "FN": 10,
+        "TN": 30
+      },
+      "f1": null,
+      "n_unprocessable": 0,
+      "precision": null,
+      "published_verdict_counts": {
+        "skipped": 40
+      },
+      "recall": 0.0
+    },
+    "rules_domain_adapted": {
+      "claim_detection_vs_single_R1": {
+        "FN": 8,
+        "TN": 30,
+        "TP": 2
+      },
+      "f1": 0.33333333333333337,
+      "n_unprocessable": 0,
+      "precision": 1.0,
+      "published_verdict_counts": {
+        "skipped": 38,
+        "unverifiable": 2
+      },
+      "recall": 0.2
+    },
+    "rules_shipped": {
+      "claim_detection_vs_single_R1": {
+        "FN": 10,
+        "TN": 30
+      },
+      "f1": null,
+      "n_unprocessable": 0,
+      "precision": null,
+      "published_verdict_counts": {
+        "skipped": 40
+      },
+      "recall": 0.0
+    }
+  },
+  "schema": "naacl-heldout-published-score-v1"
+}
