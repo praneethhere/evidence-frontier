@@ -42,4 +42,6 @@ Original Evidence Frontier code and author-created documentation are licensed un
 
 ## Research status and reproducibility
 
+See [documentation errata](DOCUMENTATION_ERRATA.md) for the documentation-only update and exact v1.0.0 implementation scope.
+
 See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for study boundaries and commands. This artifact is intended for research and debugging, not production authorization or proof of real-world task success. The paper is being prepared for submission; no acceptance or peer-review outcome is claimed. Generative AI assisted code, interface, documentation and manuscript development; the author executed the reported experiments and reviewed the research outputs.

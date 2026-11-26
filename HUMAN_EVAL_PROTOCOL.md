@@ -1,6 +1,6 @@
-# Evidence Frontier: pre-registration draft for independent annotation
+# Evidence Frontier: historical proposed annotation protocol
 
-**Not executed. Do not report this document as a user study.**
+**Historical planning document.** The full proposed two-reviewer study and automatic probe-planning evaluation were not executed. Separate single-R1 development (36 scored cases) and trajectory-disjoint holdout (40 cases) studies were executed; see `research/final/` for frozen results. Do not treat this plan as a user study.
 
 ## Research question
 
@@ -24,7 +24,7 @@ Each unit is `(task instruction, original agent response, original visible execu
 
 - Naive finish-only acceptance (weak control).
 - Claim-only language model judge with documented prompt/model/settings, **if resources allow**.
-- Strong trace-aware existing system (e.g., agent-claimcheck): run the actual release with its native trace adapters, compare matched inputs and abstention assumptions. **Not yet run.**
+- Strong trace-aware existing system (e.g., agent-claimcheck): run the actual release with its native trace adapters, compare matched inputs and abstention assumptions. **Completed for the separate detection pilot and holdout using agent-claimcheck v0.1.2 shipped/adapted offline configurations; no model-judge or full per-obligation evaluation.**
 - Evidence Frontier rule baseline and any proposed stronger extractor.
 - Report claim span precision/recall/F1; mapping accuracy; per-obligation support/conflict/unknown macro F1; false-certification rate, appropriate abstention, coverage, runtime. Separate unsupported confidence from eventual failed task truth.
 - Evaluate probe proposal quality only if a real executable, safe intervention adapter is implemented and compared against equivalent existing evidence interventions.

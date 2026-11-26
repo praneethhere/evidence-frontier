@@ -12,42 +12,38 @@
 
 ## Stage A — Prepare and freeze predictions BEFORE any new annotations
 
-Open a new terminal (the existing web app on port 8774 can remain running):
+For a new reproduction, work from this `reproduction/holdout` directory and replace the example paths with local paths outside the repository. The historical 40-case run is complete; the commands below reproduce the protocol, not a new independent evaluation.
 
 ```bash
-cd ~/Downloads
-unzip -q -o NAACL2027_Frozen_Holdout_20261123.zip
-cd NAACL2027_Frozen_Holdout_20261123
 python3 -m unittest discover -s tests -v
 python3 holdout.py prepare \
-  --source "$HOME/Downloads/naacl2027_public_source/gpt-4o-20240806.jsonl" \
-  --source-manifest "$HOME/Downloads/naacl2027_public_source/source_manifest.json" \
-  --out-dir "$HOME/Downloads/naacl2027_heldout_v1"
+  --source "$HOME/ef-local-data/naacl2027_public_source/gpt-4o-20240806.jsonl" \
+  --source-manifest "$HOME/ef-local-data/naacl2027_public_source/source_manifest.json" \
+  --out-dir "$HOME/ef-local-data/naacl2027_heldout_v1"
 ```
 
 **Do not delete or overwrite the output directory** after running. A reproducible freeze hashes each private prediction and selected trace, so later changes are detected. If you get a mismatch or another error, report it; never edit underlying data to make it pass.
 
-Upload **only** `~/Downloads/naacl2027_heldout_v1/UPLOAD_HELDOUT_PREPARED_AGGREGATE_ONLY.json`. This reports whether a full, source-disjoint 40-case selection was possible on the actual public corpus. The actual source-corpus run was not performed in our builder environment.
+Retain or share **only** `~/ef-local-data/naacl2027_heldout_v1/UPLOAD_HELDOUT_PREPARED_AGGREGATE_ONLY.json`. This reports whether a full, source-disjoint 40-case selection was possible on the actual public corpus. The original corpus run was performed on the author’s Mac; the aggregate preparation report is included in `../../research/final/`.
 
 ## Stage B — Optional but strongly recommended: freeze published baseline NOW
 
-Your `naacl-claimcheck-venv` already has `agent-claimcheck==0.1.2`. Activate it and run:
+Use a separate Python environment with `agent-claimcheck==0.1.2` installed. Activate it and run:
 
 ```bash
-source "$HOME/Downloads/naacl-claimcheck-venv/bin/activate"
 python3 baseline_frozen.py predict \
-  --source "$HOME/Downloads/naacl2027_public_source/gpt-4o-20240806.jsonl" \
-  --source-manifest "$HOME/Downloads/naacl2027_public_source/source_manifest.json" \
-  --out-dir "$HOME/Downloads/naacl2027_heldout_v1"
+  --source "$HOME/ef-local-data/naacl2027_public_source/gpt-4o-20240806.jsonl" \
+  --source-manifest "$HOME/ef-local-data/naacl2027_public_source/source_manifest.json" \
+  --out-dir "$HOME/ef-local-data/naacl2027_heldout_v1"
 ```
 
-Upload only `~/Downloads/naacl2027_heldout_v1/UPLOAD_PUBLISHED_FROZEN_AGGREGATE_ONLY.json`. **Do not look at private model verdicts before completing human labels.** No R1/R2 CSV is passed to either predictor.
+Retain or share only `~/ef-local-data/naacl2027_heldout_v1/UPLOAD_PUBLISHED_FROZEN_AGGREGATE_ONLY.json`. **Do not look at private model verdicts before completing human labels.** No R1/R2 CSV is passed to either predictor.
 
 ## Stage C — Independent human review of the NEW 40 holdout cases
 
 Open:
 
-`~/Downloads/naacl2027_heldout_v1/LOCAL_PRIVATE_DO_NOT_UPLOAD/BLIND_REVIEW_LOCAL.html`
+`~/ef-local-data/naacl2027_heldout_v1/LOCAL_PRIVATE_DO_NOT_UPLOAD/BLIND_REVIEW_LOCAL.html`
 
 Each case is named `heldout_001` … `heldout_040`, not `blind_001` … `blind_040`. The new cases should be independently judged. Do not ask an AI assistant to label them. Do not open `frozen_predictions.json` or the published checker decisions before you export human labels.
 
@@ -65,21 +61,21 @@ Export a CSV named `heldout_annotations_R1.csv`, and keep a backup. A second ind
 
 ```bash
 python3 holdout.py score \
-  --source "$HOME/Downloads/naacl2027_public_source/gpt-4o-20240806.jsonl" \
-  --source-manifest "$HOME/Downloads/naacl2027_public_source/source_manifest.json" \
-  --out-dir "$HOME/Downloads/naacl2027_heldout_v1" \
-  --r1 "$HOME/Downloads/heldout_annotations_R1.csv"
+  --source "$HOME/ef-local-data/naacl2027_public_source/gpt-4o-20240806.jsonl" \
+  --source-manifest "$HOME/ef-local-data/naacl2027_public_source/source_manifest.json" \
+  --out-dir "$HOME/ef-local-data/naacl2027_heldout_v1" \
+  --r1 "$HOME/ef-local-data/heldout_annotations_R1.csv"
 
 python3 baseline_frozen.py score \
-  --source "$HOME/Downloads/naacl2027_public_source/gpt-4o-20240806.jsonl" \
-  --source-manifest "$HOME/Downloads/naacl2027_public_source/source_manifest.json" \
-  --out-dir "$HOME/Downloads/naacl2027_heldout_v1" \
-  --r1 "$HOME/Downloads/heldout_annotations_R1.csv"
+  --source "$HOME/ef-local-data/naacl2027_public_source/gpt-4o-20240806.jsonl" \
+  --source-manifest "$HOME/ef-local-data/naacl2027_public_source/source_manifest.json" \
+  --out-dir "$HOME/ef-local-data/naacl2027_heldout_v1" \
+  --r1 "$HOME/ef-local-data/heldout_annotations_R1.csv"
 ```
 
-For an independent R2, add `--r2 "$HOME/Downloads/heldout_annotations_R2.csv"` to `holdout.py score`. Both R1/R2 label files remain local.
+For an independent R2, add `--r2 "$HOME/ef-local-data/heldout_annotations_R2.csv"` to `holdout.py score`. Both R1/R2 label files remain local.
 
-Upload **only** the resulting `UPLOAD_HELDOUT_SCORE_AGGREGATE_ONLY.json` and `UPLOAD_PUBLISHED_SCORE_AGGREGATE_ONLY.json` (plus optionally the preparation aggregates). **Do not upload `LOCAL_PRIVATE_DO_NOT_UPLOAD` or raw case text.**
+Retain or share **only** the resulting `UPLOAD_HELDOUT_SCORE_AGGREGATE_ONLY.json` and `UPLOAD_PUBLISHED_SCORE_AGGREGATE_ONLY.json` (plus optionally the preparation aggregates). **Do not upload `LOCAL_PRIVATE_DO_NOT_UPLOAD` or raw case text.**
 
 ## Integrity and validity limitations
 
